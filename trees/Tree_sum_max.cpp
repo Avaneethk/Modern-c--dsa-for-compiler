@@ -30,12 +30,14 @@ int main()
     int sum = treesum(root);
     cout<<"Tree sum :"<<sum<<endl;
 
-    return 0;
+    
     
     delete root->left->right;
     delete root->left->left;
     delete root->right;
     delete root->left;
     delete root;
+
+    return 0;
 
 }
